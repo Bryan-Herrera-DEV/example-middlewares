@@ -13,13 +13,12 @@ process.env.SEED = process.env.SEED || 'JLqsvj969gJYJ88LJs8Sj3y8j5Lñ39l35Y9gvjd
 // == BASE DE DATOS ==
 let urlDB;
 if (process.env.NODE_ENV === 'dev') {
-  urlDB = 'mongodb://localhost:27017/todoappmia';
+  urlDB = 'mongodb://localhost:27017/db_tsk_mng';
 } else {
-  urlDB = 'mongodb+srv://root:root@cluster0.glx5t.mongodb.net/todoappmia';
+  urlDB = '#';
 }
-urlDB = 'mongodb://localhost:27017/todoappmia';
 
 process.env.URLDB = urlDB;
 
 // == GOOGLE CLIENT ID ==
-process.env.CLIENT_ID = process.env.CLIENT_ID || '867887461445-f7jgtgloh1fc0jgs2p2d8ap6oqkb07v8.apps.googleusercontent.com';
+process.env.CLIENT_ID = process.env.CLIENT_ID || '#.apps.googleusercontent.com';
