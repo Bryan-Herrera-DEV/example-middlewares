@@ -8,9 +8,6 @@ const helmet = require('helmet');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const morgan = require('morgan');
-/**
- * Load aplication modules, folders, files, etc.
- */
 
 const { notFound, normalResponse, internalServerError } = require('./middlewares/responses.handler');
 const v1 = require('./server/app');
